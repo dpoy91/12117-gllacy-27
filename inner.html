@@ -67,7 +67,68 @@
                 <h1>Сливочное мороженое</h1>
             </div>
 
-            <!-- <div class="page-header__filter"></div> -->
+            <div class="page-header__filter">
+                <form class="filter" action="#" method="post">
+                    <ul class="filter__group" role="none">
+                        <li class="filter__item">
+                            <label for="filter__popular">Сортировка:</label>
+                            <select name="popular" id="filter__popular">
+                                <option value="popular">по популярности</option>
+                            </select>
+                        </li>
+
+                        <li class="filter__item">
+                            <label for="filter__range">Цена: 100 руб. – 500 руб.</label>
+                            <input type="number" min="100" max="500" name="filter__price" id="filter__range" value="price">
+
+                            <span class="range__controls">
+                                <span class="scale">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="range__toggle range__toggle--min"></span>
+                                <span class="range__toggle range__toggle--max"></span>
+                            </span>
+                        </li>
+                    </ul>
+
+                    <fieldset>
+                        <legend>Жирность:</legend>
+
+                        <label>
+                            <input type="radio" name="fatness" value="0">
+                            <span class="radio-indicator"></span>0%
+                        </label>
+
+                        <label>
+                            <input type="radio" name="fatness" value="10" checked>
+                            <span class="radio-indicator"></span>до 10%
+                        </label>
+
+                        <label>
+                            <input type="radio" name="fatness" value="30">
+                            <span class="radio-indicator"></span>до 30%
+                        </label>
+
+                        <label>
+                            <input type="radio" name="fatness" value="30plus">
+                            <span class="radio-indicator"></span>выше 30%
+                        </label>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Наполнители:</legend>
+
+                        <label><input type="checkbox" value="chocolade" checked>шоколадные</label>
+                        <label><input type="checkbox" value="powders" checked>сахарные присыпки</label>
+                        <label><input type="checkbox" value="fruit">фрукты</label>
+                        <label><input type="checkbox" value="syrups">сиропы</label>
+                        <label><input type="checkbox" value="jams">джемы</label>
+                    </fieldset>
+
+                    <button type="button" name="button-filter">Применить</button>
+                </form>
+            </div>
         </section>
 
         <section class="page-content__items">
