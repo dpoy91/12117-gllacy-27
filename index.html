@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -16,6 +17,23 @@
             <ul class="main-nav__list">
                 <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Каталог</a>
+                    <ul class="submenu__list">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link"><b>Новинки</b></a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Сливочное</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Щербеты</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Фруктовый лед</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Мелорин</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Доставка и оплата</a>
@@ -37,6 +55,37 @@
                 <button type="button" class="user-nav__button user-nav__button--cart">Пусто</button>
             </li>
         </ul>
+
+        <div class="search">
+            <form action="#" class="search__form" method="post">
+                <label>
+                    <input type="text" name="search" value="" placeholder="Крем-брюле">
+                </label>
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="#" class="login__form" method="post">
+                <label>
+                    <input type="text" name="user-login" value="" placeholder="email@example.com">
+                </label>
+
+                <label>
+                    <input type="password" name="user-password" value="password" placeholder="password">
+                </label>
+
+                <button type="button" name="btn btn--login">Войти</button>
+
+                <ul class="login__link-list">
+                    <li class="login__link-item">
+                        <a href="#" class="login__link">Забыли пароль?</a>
+                    </li>
+                    <li class="login__link-item">
+                        <a href="#" class="login__link">Новая регистрация</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
 
         <div class="page-header__contacts">
             <span class="page-header__schedule">С 10 до 20, ежедневно</span>
@@ -276,6 +325,32 @@
             </p>
         </div>
     </footer>
+
+    <div class="feedback">
+        <div class="feedback__form">
+            <form action="#" method="post">
+                <p class="feedback__title">Мы обязательно вам ответим!</p>
+                <span class="feedback__close">
+                    <span class="sr-only">Закрыть окно</span>
+                </span>
+
+                <label>
+                    <input type="text" name="feedback__name" value="" placeholder="Имя Фамилия">
+                </label>
+
+                <label>
+                    <input type="text" name="feedback__email" value="" placeholder="email@example.com">
+                </label>
+
+                <label>
+                    <textarea name="feedback__message" rows="5" cols="40">В свободной форме</textarea>
+                </label>
+
+                <button type="button" name="btn btn--feedback">Отправить</button>
+            </form>
+        </div>
+        <div class="overlay"></div>
+    </div>
 
   </body>
 </html>
