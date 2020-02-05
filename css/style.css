@@ -18,6 +18,7 @@ body {
 /* Display none */
 .submenu__list,
 .search,
-.login {
+.login,
+.cart {
     display: none;
 }
