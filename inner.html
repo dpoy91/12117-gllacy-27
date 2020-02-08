@@ -3,150 +3,156 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
         <h1 class="sr-only">Интернет магазин мороженного "GllacyShop"</h1>
 
-        <a href="index.html" class="page-header__logo">
-            <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
-        </a>
+        <div class="page-header__inner">
+            <a href="index.html" class="page-header__logo">
+                <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
+            </a>
 
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active">
-                    <a class="main-nav__link">Каталог</a>
-                    <ul class="submenu__list">
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link"><b>Новинки</b></a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Сливочное</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Щербеты</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Фруктовый лед</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Мелорин</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">Доставка и оплата</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">О Компании</a>
-                </li>
-            </ul>
-        </nav>
-
-        <ul class="user-nav__list">
-            <li class="user-nav__item">
-                <button type="button" class="user-nav__button user-nav__button--search">Поиск</button>
-            </li>
-            <li class="user-nav__item">
-                <button type="button" class="user-nav__button user-nav__button--login">Вход</button>
-            </li>
-            <li class="user-nav__item">
-                <button type="button" class="user-nav__button user-nav__button--cart">2 товара</button>
-            </li>
-        </ul>
-
-        <div class="search">
-            <form action="#" class="search__form" method="post">
-                <label>
-                    <input type="text" name="search" value="" placeholder="Крем-брюле">
-                </label>
-            </form>
-        </div>
-
-        <div class="login">
-            <form action="#" class="login__form" method="post">
-                <label>
-                    <input type="text" name="user-login" value="" placeholder="email@example.com">
-                </label>
-
-                <label>
-                    <input type="password" name="user-password" value="password" placeholder="password">
-                </label>
-
-                <button type="button" name="btn btn--login">Войти</button>
-
-                <ul class="login__link-list">
-                    <li class="login__link-item">
-                        <a href="#" class="login__link">Забыли пароль?</a>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item--active">
+                        <a class="main-nav__link">Каталог</a>
+                        <ul class="submenu__list">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link"><b>Новинки</b></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Сливочное</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Щербеты</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Фруктовый лед</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Мелорин</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="login__link-item">
-                        <a href="#" class="login__link">Новая регистрация</a>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Доставка и оплата</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">О Компании</a>
                     </li>
                 </ul>
-            </form>
-        </div>
+            </nav>
 
-        <div class="cart">
-            <table class="cart__table">
-                <tr class="cart__row">
-                    <td class="cart__cell">
-                        <span class="cart__item-del">
-                            <span class="sr-only">Удалить из корзины</span>
-                        </span>
-                    </td>
-                    <td class="cart__cell">
-                        <img src="img/product__item-1.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
-                    </td>
-                    <td class="cart__cell">
-                        <p class="cart__product-name">Пломбир с апельсиновым джемом</p>
-                    </td>
-                    <td class="cart__cell">
-                        <p class="cart__product-spec">1,5 кг х <span class="cart__product-price">200 руб.</span></p>
-                    </td>
-                    <td class="cart__cell">
-                        <span class="cart__price">300 руб.</span>
-                    </td>
-                </tr>
+            <ul class="user-nav__list">
+                <li class="user-nav__item">
+                    <button type="button" class="user-nav__button user-nav__button--search">Поиск</button>
+                </li>
+                <li class="user-nav__item">
+                    <button type="button" class="user-nav__button user-nav__button--login">Вход</button>
+                </li>
+                <li class="user-nav__item">
+                    <button type="button" class="user-nav__button user-nav__button--cart">2 товара</button>
+                </li>
+            </ul>
 
-                <tr class="cart__row">
-                    <td class="cart__cell">
-                        <span class="cart__item-del">
-                            <span class="sr-only">Удалить из корзины</span>
-                        </span>
-                    </td>
-                    <td class="cart__cell">
-                        <img src="img/product__item-3.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
-                    </td>
-                    <td class="cart__cell">
-                        <p class="cart__product-name">Клубничный пломбир с присыпкой из белого шоколада</p>
-                    </td>
-                    <td class="cart__cell">
-                        <p class="cart__product-spec">1,5 кг х <span class="cart__product-price">300 руб.</span></p>
-                    </td>
-                    <td class="cart__cell">
-                        <span class="cart__price">450 руб.</span>
-                    </td>
-                </tr>
+            <div class="search">
+                <form action="#" class="search__form" method="post">
+                    <label>
+                        <input type="text" name="search" value="" placeholder="Крем-брюле">
+                    </label>
+                </form>
+            </div>
 
-                <tr class="cart__row">
-                    <td class="cart__cell" colspan="5">
-                        <span class="cart__total-price">Итого: 750 руб.</span>
-                    </td>
-                </tr>
+            <div class="login">
+                <form action="#" class="login__form" method="post">
+                    <label>
+                        <input type="text" name="user-login" value="" placeholder="email@example.com">
+                    </label>
 
-                <tr class="cart__row">
-                    <td class="cart__cell" colspan="5">
-                        <a href="#" class="cart__order btn">Оформить заказ</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
+                    <label>
+                        <input type="password" name="user-password" value="password" placeholder="password">
+                    </label>
 
-        <div class="page-header__contacts">
-            <span class="page-header__schedule">С 10 до 20, ежедневно</span>
-            <span class="page-header__phone">
-                <a href="tel:8812-450-25-25">8 812 450-25-25</a>
-            </span>
+                    <button type="button" name="btn btn--login">Войти</button>
+
+                    <ul class="login__link-list">
+                        <li class="login__link-item">
+                            <a href="#" class="login__link">Забыли пароль?</a>
+                        </li>
+                        <li class="login__link-item">
+                            <a href="#" class="login__link">Новая регистрация</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="cart">
+                <table class="cart__table">
+                    <tr class="cart__row">
+                        <td class="cart__cell">
+                            <span class="cart__item-del">
+                                <span class="sr-only">Удалить из корзины</span>
+                            </span>
+                        </td>
+                        <td class="cart__cell">
+                            <img src="img/product__item-1.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
+                        </td>
+                        <td class="cart__cell">
+                            <p class="cart__product-name">Пломбир с апельсиновым джемом</p>
+                        </td>
+                        <td class="cart__cell">
+                            <p class="cart__product-spec">1,5 кг х <span class="cart__product-price">200 руб.</span></p>
+                        </td>
+                        <td class="cart__cell">
+                            <span class="cart__price">300 руб.</span>
+                        </td>
+                    </tr>
+
+                    <tr class="cart__row">
+                        <td class="cart__cell">
+                            <span class="cart__item-del">
+                                <span class="sr-only">Удалить из корзины</span>
+                            </span>
+                        </td>
+                        <td class="cart__cell">
+                            <img src="img/product__item-3.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
+                        </td>
+                        <td class="cart__cell">
+                            <p class="cart__product-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+                        </td>
+                        <td class="cart__cell">
+                            <p class="cart__product-spec">1,5 кг х <span class="cart__product-price">300 руб.</span></p>
+                        </td>
+                        <td class="cart__cell">
+                            <span class="cart__price">450 руб.</span>
+                        </td>
+                    </tr>
+
+                    <tr class="cart__row">
+                        <td class="cart__cell" colspan="5">
+                            <span class="cart__total-price">Итого: 750 руб.</span>
+                        </td>
+                    </tr>
+
+                    <tr class="cart__row">
+                        <td class="cart__cell" colspan="5">
+                            <a href="#" class="cart__order btn">Оформить заказ</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="page-header__contacts">
+                <span class="page-header__schedule">С 10 до 20, ежедневно</span>
+                <span class="page-header__phone">
+                    <a href="tel:8812-450-25-25">8 812 450-25-25</a>
+                </span>
+            </div>
         </div>
     </header>
 
@@ -237,73 +243,73 @@
 
         <section class="page-content__items">
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-1.png" width="267" height="267" alt="">
                 <p class="item__price">310<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-2.png" width="267" height="267" alt="">
                 <p class="item__price">380<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочно-кофейное с кусочками шоколада</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-3.png" width="267" height="267" alt="">
                 <p class="item__price">355<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-4.png" width="267" height="267" alt="">
                 <p class="item__price">415<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочное крем-брюле с карамельной подливкой</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-5.png" width="267" height="267" alt="">
                 <p class="item__price">325<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочное с брусничным джемом</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-6.png" width="267" height="267" alt="">
                 <p class="item__price">410<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочно-черничное с цельными ягодами черники </figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-7.png" width="267" height="267" alt="">
                 <p class="item__price">375<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочно-лимонное с карамельной присыпкой</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-8.png" width="267" height="267" alt="">
                 <p class="item__price">320<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочное с шоколадной стружкой</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-9.png" width="267" height="267" alt="">
                 <p class="item__price">440<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочно-ванильное с кусочками шоколада</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-10.png" width="267" height="267" alt="">
                 <p class="item__price">435<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочноe с ментоловым сиропом</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-11.png" width="267" height="267" alt="">
                 <p class="item__price">355<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочное с кусочками черного шоколада</figcaption>
             </figure>
 
             <figure class="page-content__item">
-                <img src="https://via.placeholder.com/150x100" width="267" height="267" alt="">
+                <img src="img/product__item-12.png" width="267" height="267" alt="">
                 <p class="item__price">420<span>₽/кг</span></p>
                 <figcaption class="item__title">Сливочное с мятным сиропом</figcaption>
             </figure>
