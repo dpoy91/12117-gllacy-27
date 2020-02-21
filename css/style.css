@@ -374,7 +374,7 @@ a { text-decoration: none; color: #ffffff; }
 
 .promo__title {
     font-size: 35px;
-    line-height: 41px;
+    line-height: 34px;
     font-weight: bold;
 }
 
@@ -404,6 +404,10 @@ a { text-decoration: none; color: #ffffff; }
 
 .promo__btn {
     float: right;
+    margin-top: 26px;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 11px 23px;
 }
 
 .page-content__items {
@@ -451,7 +455,8 @@ a { text-decoration: none; color: #ffffff; }
 
 .feature {
     box-sizing: border-box;
-    margin: 40px 27px;
+    min-height: 306px;
+    margin: 42px 27px;
     padding: 20px;
     background-color: #f8f7f4;
     background-image: url("../img/waffle-bg.jpg");
@@ -464,21 +469,23 @@ a { text-decoration: none; color: #ffffff; }
 .feature__title {
     font-size: 24px;
     line-height: 30px;
-    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 7px;
+    letter-spacing: 0.3px;
 }
 
 .feature__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    margin: -5px 0;
 }
 
 .feature__item {
     position: relative;
     padding-left: 17px;
     width: 484px;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 16px;
     list-style: none;
 }
@@ -522,6 +529,7 @@ a { text-decoration: none; color: #ffffff; }
 .news {
     box-sizing: border-box;
     width: 560px;
+    min-height: 220px;
     padding: 20px;
     color: #323232;
     background-color: #ffffff;
@@ -561,13 +569,13 @@ a { text-decoration: none; color: #ffffff; }
 
 .subscribe__inner {
     background-color: #f8f7f4;
-    min-height: 220px;
+    min-height: 210px;
     border-radius: 15px;
 }
 
 .subscribe__text {
     margin-top: 0;
-    padding-top: 33px;
+    padding-top: 28px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -577,9 +585,8 @@ a { text-decoration: none; color: #ffffff; }
 }
 
 .subscribe__form {
-    padding-bottom: 33px;
-    padding-bottom: 33px;
     padding-left: 20px;
+    padding-top: 5px;
 }
 
 .subscribe__form input {
@@ -595,6 +602,7 @@ a { text-decoration: none; color: #ffffff; }
 
 .subscribe__form .btn--send {
     cursor: pointer;
+    padding: 9px 19px;
     margin-left: 10px;
     border: none;
     color: #ffffff;
