@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="shortcut icon" href="img/pin.svg" type="image/x-icon">
 
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 	</head>
 
 
@@ -62,107 +62,111 @@
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
 								Поиск
 							</button>
+
+							<div class="search">
+								<form action="#" class="search__form" method="post">
+									<label>
+										<input type="text" name="search" value="" placeholder="Крем-брюле">
+									</label>
+								</form>
+							</div>
 						</li>
+
 						<li class="user-nav__item">
 							<button type="button" class="user-nav__button user-nav__button--login">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></svg>
 								Вход
 							</button>
+
+							<div class="login">
+								<form action="#" class="login__form" method="post">
+									<label>
+										<input type="text" name="user-login" value="" placeholder="email@example.com">
+									</label>
+		
+									<label>
+										<input type="password" name="user-password" value="password" placeholder="password">
+									</label>
+		
+									<button type="button" name="login" class="button btn--login">Войти</button>
+		
+									<ul class="login__link-list">
+										<li class="login__link-item">
+											<a href="#" class="login__link">Забыли пароль?</a>
+										</li>
+										<li class="login__link-item">
+											<a href="#" class="login__link">Новая регистрация</a>
+										</li>
+									</ul>
+								</form>
+							</div>
 						</li>
+						
 						<li class="user-nav__item">
 							<button type="button" class="user-nav__button user-nav__button--cart">
 								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
 								Пусто
 							</button>
+
+							<div class="cart cart--empty">
+								<table class="cart__table">
+									<tr class="cart__row">
+										<td class="cart__cell">
+											<span class="cart__item-del">
+												<span class="sr-only">Удалить из корзины</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+											</span>
+										</td>
+										<td class="cart__cell">
+											<img src="img/product__item-1.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
+										</td>
+										<td class="cart__cell">
+											<p class="cart__product-name">Пломбир с апельсиновым джемом</p>
+										</td>
+										<td class="cart__cell">
+											<p class="cart__product-spec">1,5 кг х <span class="cart__product-price">200 руб.</span></p>
+										</td>
+										<td class="cart__cell">
+											<span class="cart__price">300 руб.</span>
+										</td>
+									</tr>
+
+									<tr class="cart__row">
+										<td class="cart__cell">
+											<span class="cart__item-del">
+												<span class="sr-only">Удалить из корзины</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+											</span>
+										</td>
+										<td class="cart__cell">
+											<img src="img/product__item-3.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
+										</td>
+										<td class="cart__cell">
+											<p class="cart__product-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+										</td>
+										<td class="cart__cell">
+											<p class="cart__product-spec">1,5 кг х <span class="cart__product-price">300 руб.</span></p>
+										</td>
+										<td class="cart__cell">
+											<span class="cart__price">450 руб.</span>
+										</td>
+									</tr>
+		
+									<tr class="cart__row cart__total">
+										<td class="cart__cell" colspan="5">
+											<span class="cart__total-price">Итого: 750 руб.</span>
+										</td>
+									</tr>
+		
+									<tr class="cart__row cart__order">
+										<td class="cart__cell" colspan="5">
+											<a href="#" class="btn--order button">Оформить заказ</a>
+										</td>
+									</tr>
+								</table>
+							</div>
 						</li>
 					</ul>
-
-					<div class="search">
-						<form action="#" class="search__form" method="post">
-							<label>
-								<input type="text" name="search" value="" placeholder="Крем-брюле">
-							</label>
-						</form>
-					</div>
-
-					<div class="login">
-						<form action="#" class="login__form" method="post">
-							<label>
-								<input type="text" name="user-login" value="" placeholder="email@example.com">
-							</label>
-
-							<label>
-								<input type="password" name="user-password" value="password" placeholder="password">
-							</label>
-
-							<button type="button" name="btn btn--login">Войти</button>
-
-							<ul class="login__link-list">
-								<li class="login__link-item">
-									<a href="#" class="login__link">Забыли пароль?</a>
-								</li>
-								<li class="login__link-item">
-									<a href="#" class="login__link">Новая регистрация</a>
-								</li>
-							</ul>
-						</form>
-					</div>
-
-					<div class="cart">
-						<table class="cart__table">
-							<tr class="cart__row">
-								<td class="cart__cell">
-									<span class="cart__item-del">
-										<span class="sr-only">Удалить из корзины</span>
-									</span>
-								</td>
-								<td class="cart__cell">
-									<img src="img/product__item-1.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
-								</td>
-								<td class="cart__cell">
-									<p class="cart__product-name">Пломбир с апельсиновым джемом</p>
-								</td>
-								<td class="cart__cell">
-									<p class="cart__product-spec">1,5 кг х <span class="cart__product-price">200 руб.</span></p>
-								</td>
-								<td class="cart__cell">
-									<span class="cart__price">300 руб.</span>
-								</td>
-							</tr>
-
-							<tr class="cart__row">
-								<td class="cart__cell">
-									<span class="cart__item-del">
-										<span class="sr-only">Удалить из корзины</span>
-									</span>
-								</td>
-								<td class="cart__cell">
-									<img src="img/product__item-3.png" class="cart__product-img" width="33" height="33" alt="Изображение мороженного">
-								</td>
-								<td class="cart__cell">
-									<p class="cart__product-name">Клубничный пломбир с присыпкой из белого шоколада</p>
-								</td>
-								<td class="cart__cell">
-									<p class="cart__product-spec">1,5 кг х <span class="cart__product-price">300 руб.</span></p>
-								</td>
-								<td class="cart__cell">
-									<span class="cart__price">450 руб.</span>
-								</td>
-							</tr>
-
-							<tr class="cart__row">
-								<td class="cart__cell" colspan="5">
-									<span class="cart__total-price">Итого: 750 руб.</span>
-								</td>
-							</tr>
-
-							<tr class="cart__row">
-								<td class="cart__cell" colspan="5">
-									<a href="#" class="cart__order btn">Оформить заказ</a>
-								</td>
-							</tr>
-						</table>
-					</div>
 
 					<div class="contacts-top">
 						<span class="schedule">С 10 до 20, ежедневно</span><br>
@@ -325,7 +329,7 @@
 							(с 10 до 20 ежедневно)
 						</p>
 
-						<a href="#" class="contacts__btn button">Форма обратной связи</a>
+						<button class="contacts__btn button" id="feedback-form">Форма обратной связи</button>
 					</address>
 				</section>
 			</main>
@@ -388,32 +392,45 @@
 					</p>
 				</div>
 			</footer>
+		</div>
 
-			<div class="feedback">
-				<div class="feedback__form">
-					<form action="#" method="post">
-						<p class="feedback__title">Мы обязательно вам ответим!</p>
-						<span class="feedback__close">
-							<span class="sr-only">Закрыть окно</span>
-						</span>
+		<div class="feedback">
+			<div class="feedback__form">
+				<form action="#" method="post">
+					<p class="feedback__title">Мы обязательно вам ответим!</p>
+					<span class="feedback__close">
+						<span class="sr-only">Закрыть окно</span>
+					</span>
 
-						<label>
-							<input type="text" name="feedback__name" value="" placeholder="Имя Фамилия">
-						</label>
+					<label>
+						<input type="text" name="feedback__name" value="" placeholder="Имя Фамилия">
+					</label>
 
-						<label>
-							<input type="text" name="feedback__email" value="" placeholder="email@example.com">
-						</label>
+					<label>
+						<input type="text" name="feedback__email" value="" placeholder="email@example.com">
+					</label>
 
-						<label>
-							<textarea name="feedback__message" rows="5" cols="40">В свободной форме</textarea>
-						</label>
+					<label>
+						<textarea name="feedback__message" placeholder="В свободной форме"></textarea>
+					</label>
 
-						<button type="button" name="button btn--feedback">Отправить</button>
-					</form>
-				</div>
-				<div class="overlay"></div>
+					<button type="button" class="button btn--feedback" name="feedback--button">Отправить</button>
+				</form>
 			</div>
 		</div>
+
+		<script>
+			var link = document.querySelector("#feedback-form");
+			var popup = document.querySelector(".feedback");
+			var close = popup.querySelector(".feedback__close");
+
+			link.addEventListener("click", function() {
+				popup.classList.toggle("opened");
+			});
+
+			close.addEventListener("click", function() {
+				popup.classList.toggle("opened");
+			});
+		</script>
 	</body>
 </html>
