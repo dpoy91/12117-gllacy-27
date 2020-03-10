@@ -59,7 +59,7 @@
 					</button>
 
 					<div class="search">
-						<form action="#" class="search__form" method="post">
+						<form action="search.php" class="search__form" method="post">
 							<label>
 								<input type="text" name="search" value="" placeholder="Крем-брюле">
 							</label>
@@ -74,7 +74,7 @@
 					</button>
 
 					<div class="login">
-						<form action="#" class="login__form" method="post">
+						<form action="login.php" class="login__form" method="post">
 							<label>
 								<input type="text" name="user-login" value="" placeholder="email@example.com">
 							</label>
@@ -83,7 +83,7 @@
 								<input type="password" name="user-password" value="password" placeholder="password">
 							</label>
 
-							<button type="button" name="login" class="button btn--login">Войти</button>
+							<button type="submit" name="login" class="button btn--login">Войти</button>
 
 							<ul class="login__link-list">
 								<li class="login__link-item">
@@ -193,7 +193,7 @@
 				</div>
 
 				<div class="product__filter">
-					<form class="filter" action="#" method="post">
+					<form class="filter" action="sand.php" method="post">
 						<ul class="filter__group" role="none">
 							<li class="filter__item filter__item--popular">
 								<label for="filter__popular">Сортировка:</label><br>
@@ -275,7 +275,7 @@
 							</div>
 						</fieldset>
 
-						<button type="button" name="button-filter" class="button-filter">Применить</button>
+						<button type="submit" name="button-filter" class="button-filter">Применить</button>
 					</form>
 				</div>
 			</section>
@@ -483,7 +483,7 @@
 
 		<div class="feedback">
 			<div class="feedback__form">
-				<form action="#" method="post">
+				<form action="sand.php" method="post">
 					<p class="feedback__title">Мы обязательно вам ответим!</p>
 					<span class="feedback__close">
 						<span class="sr-only">Закрыть окно</span>
@@ -501,7 +501,7 @@
 						<textarea name="feedback__message" rows="5" cols="40">В свободной форме</textarea>
 					</label>
 
-					<button type="button" name="btn btn--feedback">Отправить</button>
+					<button type="submit" name="btn btn--feedback">Отправить</button>
 				</form>
 			</div>
 		</div>
