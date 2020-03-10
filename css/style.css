@@ -1076,7 +1076,6 @@ input[type="checkbox"]:disabled + .checkbox--indicator {
 	height: 49px;
 }
 
-
 .feature__item:nth-child(1) .feature__icon {
 	background-image: url("../img/ice-cream.svg");
 	background-repeat: no-repeat;
