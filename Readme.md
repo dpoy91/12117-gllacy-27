@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Дмитрий Полушкин](https://up.htmlacademy.ru/htmlcss/27/user/12117).
-* Наставник: [Максим Конов](https://htmlacademy.ru/profile/id206795).
+* Студент: [Дмитрий Полушкин](https://htmlacademy.ru/profile/dpoy91).
+* Наставник: [Дмитрий Полушкин](https://htmlacademy.ru/profile/dpoy91).
 
 ---
 
